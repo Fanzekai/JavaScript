@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+
+
+<script>
+    'use strict';
+    //
+    // function abs(x) {
+    //     var a = 1;
+    //     a=a+1;
+    // }
+    // a = a + 2; //报错：a is not defined
+
+
+    var a = 1;
+    function abs(x) {
+        var b = a + 2;
+    }
+    a = b + 2;//报错：b is not defined
+
+    var a = 1;
+    function f(){
+        var a ="A";
+        console.log("内部"+a);
+    }
+    f();//内部A
+    console.log("外部"+a);//外部1
+</script>
+</body>
+</html>

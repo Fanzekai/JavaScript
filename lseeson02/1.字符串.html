@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        'use strict';
+        //正常字符串我们使用单引号或者双引号包裹。
+        // let a = 1;
+        let a = '\u4e2d ' //\u#### Unicode 字符
+        let b = '\x41' //Ascll字符
+        console.log('a');
+        console.log("a");
+        console.log('b');
+        console.log("b");
+
+        var msg1 = `
+        hello
+        你好,张三。
+        `
+
+        let name = '张三';
+        let msg2 = `你好呀，${name}`; //'你好呀，张三'
+
+
+        let c = "student";
+        c.toUpperCase(); // 'STUDENT'
+        c.toLowerCase(); // 'student'
+
+        c.indexOf('t'); //1
+        console.log(  c.indexOf('t'))
+
+        console.log( c.substring(2)) //udent, 下标几到最后
+        console.log( c.substring(2,3)) //u, 取左不取右
+    </script>
+</head>
+<body>
+
+</body>
+</html>

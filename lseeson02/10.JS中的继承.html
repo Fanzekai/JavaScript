@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Skill{// 创建类
+
+        constructor(name){// 类构造方法
+            this.name = name;// 类主体/属性
+        }
+        swin(){
+            console.log(this.name+"会游泳")
+        }
+    }
+
+    var xiaoming = new Skill("xiaoming");
+    xiaoming.swin();//xiaoming会游泳
+    //继承
+
+
+    class Fish extends Skill{
+        constructor(name) {
+            super(name); //引用父类。
+        }
+        bubble(){
+            console.log(this.name+"吐泡泡")
+        }
+    }
+
+    var zhangsan = new Fish("大白鲨")
+    zhangsan.swin();//大白鲨会游泳
+    zhangsan.bubble();//大白鲨吐泡泡
+</script>
+</body>
+</html>

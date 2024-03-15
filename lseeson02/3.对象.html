@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*var 对象名 = {
+    属性名: 属性值,
+    属性名: 属性值,
+    属性名: 属性值
+}*/
+        // let obj = {
+        //     name : "张三",
+        //     tags : ['吃饭','睡觉','打豆豆']
+        // }
+
+
+        //定义
+        let obj = {
+            name : "张三",
+            tags : ['吃饭','睡觉','打豆豆']
+        }
+        //赋值
+        obj.name = "法外狂徒";
+        //取值
+        console.log(obj.name)//法外狂徒
+        console.log(obj.sex)//取一个不存在的对象属性，不会报错！会显示:undefined
+        //添加属性,直接给新的属性添加值即可
+        obj.sex = '男';
+        //删除属性
+        delete obj.sex;
+        //判断属性值是否在这个对象中！
+        "name" in obj; //true
+        'toString' in obj; //true,父类中有。
+        //判断属性值是否在这个对象的自身上
+        obj.hasOwnProperty("toString"); //false
+        obj.hasOwnProperty("name"); //true
+    </script>
+</head>
+<body>
+
+</body>
+</html>

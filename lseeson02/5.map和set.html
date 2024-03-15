@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let map = new Map([['1',"小明"],['2',"小华"],['3',"张三"]]);
+        map.get('3');//张三
+        map.delete('1');//删除元素
+
+        map.set('6',"kuangstudy");//存在就修改，不存在就添加
+        //遍历map
+        for (let x of map){
+            console.log(x);
+        }
+
+
+
+        var set = new Set([3,2,1]);
+        set.add(5);//增加元素
+        set.delete(3);//删除元素
+        set.has(1);//判断是否包含元素
+        set.size;//长度
+        //遍历遍历set
+        for (var x of set){
+            console.log(x);
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

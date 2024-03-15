@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    let date= new Date();
+    console.log(date);//Sun Dec 26 2021 22:12:50 GMT+0800 (中国标准时间)
+    //获取年
+    date.getFullYear();
+    //获取月(从0开始)
+    date.getMonth();
+    //获取日
+    date.getDate();
+    //获取时
+    date.getHours();
+    //获取分
+    date.getMinutes();
+    //获取秒
+    date.getSeconds();
+    //获取毫秒
+    date.getMilliseconds();
+    //getDay():获取星期几（从0开始）
+    //getTime():获取1970年1月1日到当前时间的毫秒数
+
+    date.toLocaleDateString();//'2021/12/26'
+    date.toJSON();//'2021-12-26T14:12:50.650Z'
+
+
+
+    var user = {
+        name: "张三",
+        tags: ['学习','吃饭', '打豆豆']
+    }
+    //JSON对象转换字符串
+    jsonUser1=JSON.stringify(user);//'{"name":"张三","tags":["学习","吃饭","打豆豆"]}'
+    //字符串转JSON对象
+    jsonUser2=JSON.parse(jsonUser1);//{name: '张三', tags: Array(3)}
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //唯一全局变量
+    var xxXObj={};s
+    //定义全局变量
+    xxXObj.name = "张三";
+    xxXObj.version = 1;
+
+    for (var i = 0; i < 10; i++) {}
+    console.log(i);//10
+
+    //let关键字，解决局部作用域冲突问题
+    for (let a = 0; a < 10; a++) {}
+    console.log(a);//报错：a is not defined
+
+    var PI = 3.14
+    console.log(PI);//3.14
+    PI = 123;//可以修改
+    console.log(PI);//123
+
+
+    const PI = 3.14; //只读变量
+    PI = 123;//报错 Attempt to assign to const or readonly variable
+    console.log(PI);
+</script>
+</body>
+</html>

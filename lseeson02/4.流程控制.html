@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // // if 判断
+        let a = 1;
+        if (a > 1){
+            console.log("判断一")
+        }else if (a > 5){
+            console.log("判断二")
+        }else {
+            console.log("判断三")
+        }
+        // while循环
+        while(a < 10){
+            a ++;
+            console.log(a);
+        }
+        // for循环
+        for(let i = 0; i < 10; i++){
+            console.log(i);
+        }
+
+        //forEach循环
+        let tags = ['吃饭','睡觉','打豆豆'];
+        tags.forEach((value,index)=>{
+            console.log(value+','+index);
+        })
+
+
+        // for in 遍历下标
+        for (let num in tags){
+            console.log(tags[num]);
+        }
+        // //通过for of遍历值
+        // for (let tag of tags){
+        //     console.log(tag);
+        // }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

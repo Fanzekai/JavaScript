@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CDN引用 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+
+<button id="btn1">点我</button>
+
+    <script>
+        //选择器就是css选择器
+        $('#btn1').click(function () {
+            alert('hello,jquery');
+        })
+
+        //jquery css 中的选择器他全部都能用，原生态js，选择器少，麻烦不好记
+        $('p'); //标签选择器，等于于 document.getElementsByTagName();
+        $('#id'); //id选择器，等价于 document.getElementById()
+        $('.class1'); //class选择器，等价于 document.getElementsByClassName()
+
+        //点击事件
+        $("#btn1").click();
+        //隐藏
+        $("#btn1").hide();
+        //显示
+        $("#btn1").show();
+    </script>
+
+
+
+
+</body>
+</html>

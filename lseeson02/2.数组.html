@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var arr = [1,2,3,4,5,6]
+        //通过下标取值和赋值
+        console.log(  arr[0])
+        console.log(  arr[0] = 1)
+
+        arr.length; // 6
+        //假如给arr.length赋值，数组的大小就会发生变化，如果赋值过小，元素就会丢失
+        arr.length = 5; // a = [1, 2, 3, 4, 5]
+
+
+        arr.indexOf(2); // 1
+
+
+        arr.slice(2); //[3, 4, 5]  类似于String中的substring
+        arr.slice(2,4); //[3, 4]
+
+
+        //插入最后一位
+        arr.push("a"); //[1, 2, 3, 4, 5, 'a']
+        //插入最前一位
+        arr.unshift("b") //['b', 1, 2, 3, 4, 5, 'a']
+        //删除最后一位
+        arr.pop(); //['b', 1, 2, 3, 4, 5]
+        //删除最前一位
+        arr.shift(); //[1, 2, 3, 4, 5]
+
+        arr.sort(); //[1, 2, 3, 4, 5]
+        // arr.reverse();// [5, 4, 3, 2, 1]
+
+        let arr2 = ['a','b','c']
+        arr.concat(arr2); //[1, 2, 3, 4, 5, 'a', 'b', 'c']
+        console.log( arr.concat(arr2))
+        //返回一个新的数组，不改变原来的数组arr
+
+        // join();//默认，去拼装数组。可以指定
+        console.log( arr.join("-"))//'1-2-3-4-5'
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
